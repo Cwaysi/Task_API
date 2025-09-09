@@ -2,13 +2,21 @@
 
 
 Download the project code from its online location.
+
 create a virtual environment with python -m venv environmentname  and activate it per your OS
+
 Change directory or (cd into the project) go to the project folder.
+
 Install the tools: Run pip install -r requirements.txt command to install all the necessary libraries.
+
 Set up the project to use your database (like PostgreSQL).
+
 Run python manage.py makemigrations and python manage.py migrate to prepare the database for the project.
-Make a superuser account with full access python manage.py createsuper .
+
+Make a superuser account with full access python manage.py createsuper
+
 Run python manage.py runserver to start the project's server.
+
 Now your project should be running!
 
 # How to Log In (Authentication)
@@ -16,7 +24,9 @@ Now your project should be running!
 You need a special key (called a JWT token) to access the secure parts of the API.
 
 Send your username and password to the url /api/token/.
+
 For every secure request, you must put the key in the "Authorization" part of your request. This tells the API who you are.
+
 If your key expires in (2hours per the project setting, you can adjust), you can use a "refresh" key to get a new one without logging in again.
 
 #API Endpoints: What They Do

@@ -98,6 +98,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+AUTH_USER_MODEL = "taskmanagement.CustomUser"
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 

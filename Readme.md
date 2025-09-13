@@ -1,7 +1,7 @@
 # How to Run the Project
 
 
-Download the project code from its online location.
+Download the project code from this repo, its public.
 
 create a virtual environment with python -m venv environmentname  and activate it per your OS
 
@@ -13,7 +13,7 @@ Set up the project to use your database (like PostgreSQL).
 
 Run python manage.py makemigrations and python manage.py migrate to prepare the database for the project.
 
-Make a superuser account with full access python manage.py createsuper
+Make a superuser account with full access python manage.py createsuperuser
 
 Run python manage.py runserver to start the project's server.
 
@@ -22,6 +22,8 @@ Now your project should be running!
 # How to Log In (Authentication)
 
 You need a special key (called a JWT token) to access the secure parts of the API.
+
+You can use postman for these operations
 
 Send your username and password to the url /api/token/.
 
